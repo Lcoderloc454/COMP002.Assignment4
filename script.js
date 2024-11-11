@@ -45,3 +45,16 @@ function reverseArray(array) {
 
 console.log(reverseArray(["2", "3", "5", "7", "11", "13"])); //result (6) ['13', '11', '7', '5', '3', '2']
 
+function reverseArrayInPlace(array) {
+    for (let i = 0; i < Math.floor(array.length / 2); i++) {
+        let temp = array[i];
+        array[i] = array[array.length - 1 - i];
+        array[array.length - 1 - 1] = temp;
+    }
+    return array;
+} //resulted C:\Program Files\nodejs\node.exe .\script.js
+
+let arrayValue = ["7", "14", "21", "28", "35"];
+reverseArrayInPlace(arrayValue);
+console.log(arrayValue); //resulted (5) ['35', '7', '21', '14', '35']
+
