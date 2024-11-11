@@ -35,3 +35,13 @@ function sum(numbers) {
 console.log(sum(range(80, 1600))); //result 1277720
 
 
+function reverseArray(array) {
+    let reverse = [];
+    for (let i = array.length - 1; i >= 0; i--) {
+        reverse.push(array[i]);
+    }
+    return reverse;
+} //result: C:\Program Files\nodejs\node.exe .\script.js
+
+console.log(reverseArray(["2", "3", "5", "7", "11", "13"])); //result (6) ['13', '11', '7', '5', '3', '2']
+
