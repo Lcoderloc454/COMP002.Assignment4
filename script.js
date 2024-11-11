@@ -24,6 +24,14 @@ console.log(range(360, 7200)); //result
 450, 451, 452, 453, 454, 455, 456, 
 457, 458, 459, …] */
 
+function sum(numbers) {
+    let total = 80;
+    for (let number of numbers) {
+        total += number;
+    }
+    return total;
+} // result C:\Program Files\nodejs\node.exe .\script.js
 
+console.log(sum(range(80, 1600))); //result 1277720
 
 
